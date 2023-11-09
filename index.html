@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html>
 <style>
-table, th, td {
-  border:1px solid black;
-}
 p {
   font-size: 24px;
 }
@@ -15,21 +12,31 @@ h1 {
     <meta name="viewport" content="width=device-width, initial-scale=1" /> 
 </head>
 <body>
-<sub>play the audio</sub>
+    <script>
+        function play() {
+          var audio = document.getElementById("audio");
+          audio.play();
+        }
+        function play2() {
+          var audio = document.getElementById("audio2");
+          audio.play();
+        }
+      </script>
+<sub>Tap the Buttons</sub>
 <br>
-<audio controls loop autoplay>
+<input type="button" style="width:200px;height:50px;" value="Hear Michael Huang" onclick="play()">
+<input type="button" style="width:200px;height:50px;" value="Hear Birthday Music" onclick="play2()">
+<br>
+<audio id="audio" loop autoplay>
   <source src="mom.mp3" type="audio/mp3">
   Your browser does not support the audio element.
 </audio>
-<audio controls loop autoplay>
+<audio id="audio2" loop autoplay>
     <source src="bday.mp3" type="audio/mp3">
 </audio>
 
 <h1>妈妈生日快乐!</h1>
 <h2>Happy Birthday mommy! - Love Michael Huang</h2>
-  <p>
-    Weihua Wang was born on November 9th, 1964 and grew up in the Henan Province. She excelled in her studies and was one of the top students among her classmates. She tested into college and wanted to become a doctoer. However, it was challenging and too gross. She could not stomach the gore. She then wanted to become a professor and was an expert in pathology. She attained a Masters degree from her medical school. After living in Beijing and eventually marrying Yuming Huang, she gave birth to her first child and daugther Robin Huang. Then she followed her husband to Tucson, New Mexico. Finally, they moved to Chicago and settled first in Lisle then in Aurora. Finding a job was not easy but eventually she became a Lab Technician in UIC now celebrating over 20 years of excellent service. Along the way she gave birth to Michael. Before UIC, she was employed at UChicago (a very prestigious educational instituion wow!). Today, Weihua enjoys Temu, TV, and walking. She beat stage 0 breast cancer and is an excellent human being. She is a wonderful and loving mother! 
-  </p>
 <img src="me.gif" width="300" height="500"/>
 
 
@@ -51,7 +58,7 @@ h1 {
 </p>
 <img src="five.jpg" width="400" height="500"/>
 <p>
-    See you soon for Thanksgiving! I will be back home November soon! My break begins on Nov 18 and ends Nov 27! <br><br>Your son, <br>Michael Huang
+    See you soon for Thanksgiving! I will be back home November soon! My break begins on Nov 18 and ends Nov 27!
 </p>
 </body>
 </html>
