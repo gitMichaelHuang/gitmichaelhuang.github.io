@@ -13,6 +13,9 @@ h1 {
 </head>
 <body>
     <script>
+      document.getElementById('stopButton').addEventListener('click', () => {
+      document.querySelectorAll('audio').forEach(el => el.pause());
+      });
         function play() {
           var audio = document.getElementById("audio");
           audio.play();
@@ -24,7 +27,41 @@ h1 {
           audio.volume = .14;
         }
         function play3() {
+          var x = document.getElementById("audio");
+          var y = document.getElementById("audio2");
+          var z = document.getElementById("yellow");
+          var a = document.getElementById("wanting");
+          a.pause();
+          x.pause();
+          y.pause();
+          z.pause();
           var audio = document.getElementById("audio3");
+          audio.play();
+          audio.volume = .8;
+        }
+        function yellow() {
+          var x = document.getElementById("audio");
+          var y = document.getElementById("audio2");
+          var z = document.getElementById("audio3");
+          var a = document.getElementById("wanting");
+          a.pause();
+          x.pause();
+          y.pause();
+          z.pause();
+          var audio = document.getElementById("yellow");
+          audio.play();
+          audio.volume = .8;
+        }
+        function wanting() {
+          var x = document.getElementById("audio");
+          var y = document.getElementById("audio2");
+          var z = document.getElementById("audio3");
+          var a = document.getElementById("yellow");
+          a.pause();
+          x.pause();
+          y.pause();
+          z.pause();
+          var audio = document.getElementById("wanting");
           audio.play();
           audio.volume = .8;
         }
@@ -48,8 +85,20 @@ h1 {
 <sup>You are quite young! But not as young as me!</sup>
 <br>
 <img src="dog.gif" width="400" height="200" />
+<br>
+<input type="button" style="width:200px;height:50px;" value="Song 1" onclick="wanting()">
+<input type="button" style="width:200px;height:50px;" value="Song 2" onclick="yellow()">
+<br>
+<audio id="wanting" controls autoplay>
+  <source src="wanting.mp3" type="audio/mp3">
+Your browser does not support the audio element.
+</audio>
+<audio id="yellow" controls autoplay>
+  <source src="yellow.mp3" type="audio/mp3">
+Your browser does not support the audio element.
+</audio>
 <p>
-  Weihua Wang was born on November 9th, 1964 and grew up in the Henan Province. She excelled in her studies and was one of the top students among her classmates. She tested into college and wanted to become a doctoer. However, it was challenging and too gross. She could not stomach the gore. She then wanted to become a professor and was an expert in pathology. She attained a Masters degree from her medical school. After living in Beijing and eventually marrying Yuming Huang, she gave birth to her first child and daugther Robin Huang. Then she followed her husband to Tucson, New Mexico. Finally, they moved to Chicago and settled first in Lisle then in Aurora. Finding a job was not easy but eventually she became a Lab Technician in UIC now celebrating over 20 years of excellent service. Along the way she gave birth to Michael. Before UIC, she was employed at UChicago (a very prestigious educational instituion wow!). Today, Weihua enjoys Temu, TV, and walking. She beat stage 0 breast cancer and is an excellent human being. She is a wonderful and loving mother! 
+  Weihua Wang is a <i>world-class</i>, <u>nationally renowned</u>, <b>University of Illinois</b> endorsed, Chinese poet and was born on November 9th, 1964 and grew up in the Henan Province. She excelled in her studies and was one of the top students among her classmates. She tested into college and wanted to become a doctoer. However, it was challenging and too gross. She could not stomach the gore. She then wanted to become a professor and was an expert in pathology. She attained a Masters degree from her medical school. After living in Beijing and eventually marrying Yuming Huang, she gave birth to her first child and daugther Robin Huang. Then she followed her husband to Tucson, New Mexico. Finally, they moved to Chicago and settled first in Lisle then in Aurora. Finding a job was not easy but eventually she became a Lab Technician in UIC now celebrating over 20 years of excellent service. Along the way she gave birth to Michael. Before UIC, she was employed at UChicago (a very prestigious educational instituion wow!). Today, Weihua enjoys Temu, WeChat, TV, poem writing, and walking. She beat stage 0 breast cancer and is an excellent human being. She is a wonderful and loving mother! 
 </p>
 <img src="me.gif" width="300" height="500"/>
 
@@ -74,7 +123,7 @@ h1 {
 <p>
     See you soon for Thanksgiving! I will be back home November soon! My break begins on Nov 18 and ends Nov 27! <br><br>Your son, <br>Michael Huang
 </p>
-<input type="button" style="width:200px;height:50px;" value="Listen to this Song" onclick="play3()">
+<input type="button" style="width:200px;height:50px;" value="Song 3" onclick="play3()">
 <br>
 <audio id="audio3" controls autoplay>
   <source src="pink.mp3" type="audio/mp3">
@@ -82,9 +131,9 @@ Your browser does not support the audio element.
 </audio>
 <br><br><br>
 <p>
-  Maybe you might enjoy this song?
+  Have a wonderful, great day!
 </p>
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6yxd0JBO2rYP0S09IcHCMK?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
 </body>
 </html>
 
