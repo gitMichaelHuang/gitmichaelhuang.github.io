@@ -23,18 +23,24 @@ h1 {
           audio.play();
           audio.volume = .14;
         }
+        function play3() {
+          var audio = document.getElementById("audio3");
+          audio.play();
+          audio.volume = .8;
+        }
       </script>
 <sub>Tap the Buttons</sub>
 <br>
 <input type="button" style="width:200px;height:50px;" value="Hear Michael Huang" onclick="play()">
 <input type="button" style="width:200px;height:50px;" value="Hear Birthday Music" onclick="play2()">
 <br>
-<audio id="audio" loop autoplay>
+<audio id="audio" autoplay>
   <source src="mom.mp3" type="audio/mp3">
   Your browser does not support the audio element.
 </audio>
-<audio id="audio2" loop autoplay>
+<audio id="audio2" autoplay>
     <source src="bday.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
 </audio>
 
 <h1>妈妈生日快乐!</h1>
@@ -68,6 +74,17 @@ h1 {
 <p>
     See you soon for Thanksgiving! I will be back home November soon! My break begins on Nov 18 and ends Nov 27! <br><br>Your son, <br>Michael Huang
 </p>
+<input type="button" style="width:200px;height:50px;" value="Listen to this Song" onclick="play3()">
+<br>
+<audio id="audio3" controls autoplay>
+  <source src="pink.mp3" type="audio/mp3">
+Your browser does not support the audio element.
+</audio>
+<br><br><br>
+<p>
+  Maybe you might enjoy this song?
+</p>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6yxd0JBO2rYP0S09IcHCMK?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 </body>
 </html>
 
