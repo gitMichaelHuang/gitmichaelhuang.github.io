@@ -12,19 +12,19 @@
         }
         .clock-container {
             background-color: white;
-            padding: 20px;
+            padding: 100px;
             margin: 20px auto;
-            max-width: 300px;
+            max-width: 500px;
             border: 1px solid #ccc;
         }
         .time {
-            font-size: 36px;
+            font-size: 56px;
             font-family: monospace;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
             color: #333;
         }
         .date {
-            font-size: 18px;
+            font-size: 30px;
             color: #666;
         }
     </style>
@@ -73,7 +73,7 @@
             var month = months[now.getMonth()];
             var day = numberToMandarin(now.getDate());
             var weekday = weekdays[now.getDay()];
-            dateDisplay.innerHTML = month + day + '日 ' + weekday;
+            dateDisplay.innerHTML = month + "&nbsp;&nbsp;&nbsp;" + day + '日 ' + "&nbsp;&nbsp;" + weekday;
         }
 
         // Initial update
