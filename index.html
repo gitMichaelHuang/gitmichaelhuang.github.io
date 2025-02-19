@@ -1,88 +1,49 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Main Page</title>
     <style>
         body {
-            text-align: center;
-            padding: 20px;
-            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
             font-family: Arial, sans-serif;
         }
-        .clock-container {
-            background-color: white;
-            padding: 100px;
-            margin: 20px auto;
-            max-width: 500px;
-            border: 1px solid #ccc;
+        .nav-tabs {
+            background-color: #333;
+            overflow: hidden;
+            width: 100%;
         }
-        .time {
-            font-size: 56px;
-            font-family: monospace;
-            margin-bottom: 20px;
-            color: #333;
+        .nav-tabs a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
         }
-        .date {
-            font-size: 30px;
-            color: #666;
+        .nav-tabs a:hover {
+            background-color: #555;
+        }
+        .nav-tabs a.active {
+            background-color: #4CAF50;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <div class="clock-container">
-        <div class="time" id="timeDisplay">00:00:00</div>
-        <div class="date" id="dateDisplay">一月一日 星期一</div>
+    <div class="nav-tabs">
+        <a href="index.html" class="active">Home</a>
+        <a href="clock.html">Clock</a>
     </div>
-
-    <script>
-        var weekdays = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
-        var months = ['一月', '二月', '三月', '四月', '五月', '六月',
-                     '七月', '八月', '九月', '十月', '十一月', '十二月'];
-        var mandarinNumbers = ['零', '一', '二', '三', '四', '五', '六', '七', '八', '九', '十'];
-        
-        function pad(num) {
-            if (num < 10) {
-                return '0' + num;
-            }
-            return '' + num;
-        }
-        
-        function numberToMandarin(num) {
-            if (num <= 10) {
-                return mandarinNumbers[num];
-            }
-            if (num < 20) {
-                return '十' + (num % 10 === 0 ? '' : mandarinNumbers[num % 10]);
-            }
-            return mandarinNumbers[Math.floor(num/10)] + '十' + (num % 10 === 0 ? '' : mandarinNumbers[num % 10]);
-        }
-
-        function updateClock() {
-            var now = new Date();
-            var timeDisplay = document.getElementById('timeDisplay');
-            var dateDisplay = document.getElementById('dateDisplay');
-            
-            // Update time
-            var hours = pad(now.getHours());
-            var minutes = pad(now.getMinutes());
-            var seconds = pad(now.getSeconds());
-            timeDisplay.innerHTML = hours + ':' + minutes + ':' + seconds;
-            
-            // Update date
-            var month = months[now.getMonth()];
-            var day = numberToMandarin(now.getDate());
-            var weekday = weekdays[now.getDay()];
-            dateDisplay.innerHTML = month + "&nbsp;&nbsp;&nbsp;" + day + '日 ' + "&nbsp;&nbsp;" + weekday;
-        }
-
-        // Initial update
-        updateClock();
-        
-        // Update every second
-        window.setInterval(function() {
-            updateClock();
-        }, 1000);
-    </script>
+    <div class="content">
+        <h1>Michael Huang</h1>
+        <!-- Your main page content here -->
+    </div>
 </body>
 </html>
