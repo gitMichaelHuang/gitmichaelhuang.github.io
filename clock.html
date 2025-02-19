@@ -20,7 +20,7 @@
         .time {
             font-size: 56px;
             font-family: monospace;
-            margin-bottom: 20px;
+            margin-bottom: 35px;
             color: #333;
         }
         .date {
@@ -73,7 +73,7 @@
             var month = months[now.getMonth()];
             var day = numberToMandarin(now.getDate());
             var weekday = weekdays[now.getDay()];
-            dateDisplay.innerHTML = month + "&nbsp;&nbsp;&nbsp;" + day + '日 ' + "&nbsp;&nbsp;" + weekday;
+            dateDisplay.innerHTML = day  + '日 ' + "&nbsp;&nbsp;&nbsp;&nbsp;" + month + "&nbsp;&nbsp;&nbsp;&nbsp;" + weekday;
         }
 
         // Initial update
