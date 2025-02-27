@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photos</title>
     <style>
         body {
@@ -35,7 +37,6 @@
         
         main {
             margin-bottom: 2rem;
-            text-align: center;
         }
         
         p {
@@ -65,6 +66,73 @@
         a:hover {
             text-decoration: underline;
         }
+        
+        /* Photo Gallery Styles */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin-bottom: 2rem;
+        }
+        
+        .gallery-item {
+            cursor: pointer;
+            border-radius: 6px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: scale(1.02);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        /* Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .lightbox.active {
+            display: flex;
+        }
+        
+        .lightbox-content {
+            max-width: 90%;
+            max-height: 90%;
+        }
+        
+        .lightbox-content img {
+            max-width: 100%;
+            max-height: 90vh;
+            border-radius: 4px;
+            border: 2px solid white;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+            
+            .gallery-item img {
+                height: 250px;
+            }
+        }
     </style>
 </head>
 
@@ -73,6 +141,125 @@
         <h2>Photos</h2>
     </header>
     
+    <main>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="images_extra/20240515_210207.jpg" alt="Photo from May 15, 2024">
+            </div>
+            <div class="gallery-item">
+                <img src="images_extra/20240515_211027.jpg" alt="Photo from May 15, 2024">
+            </div>
+            <div class="gallery-item">
+                <img src="images_extra/20240515_214120.jpg" alt="Photo from May 15, 2024">
+            </div>
+            <div class="gallery-item">
+                <img src="images_extra/20240521_235042(0).jpg" alt="Photo from May 21, 2024">
+            </div>
+            <div class="gallery-item">
+                <img src="images_extra/20240522_180409.jpg" alt="Photo from May 22, 2024">
+            </div>
+            <div class="gallery-item">
+                <img src="images_extra/20240523_184505.jpg" alt="Photo from May 23, 2024">
+            </div>
+            <div class="gallery-item">
+                <img src="images_extra/20240528_093741.jpg" alt="Photo from May 28, 2024">
+            </div>
+            <div class="gallery-item">
+                <img src="images_extra/20240528_093919.jpg" alt="Photo from May 28, 2024">
+            </div>
+            <div class="gallery-item">
+                <img src="images_extra/20240530_071338.jpg" alt="Photo from May 30, 2024">
+            </div>
+            <div class="gallery-item">
+                <img src="images_extra/20240601_100650.jpg" alt="Photo from June 1, 2024">
+            </div>
+            <div class="gallery-item">
+                <img src="images_extra/20240603_164211.jpg" alt="Photo from June 3, 2024">
+            </div>
+            <div class="gallery-item">
+                <img src="images_extra/20240604_115000.jpg" alt="Photo from June 4, 2024">
+            </div>
+            <div class="gallery-item">
+                <img src="images_extra/20240607_124831.jpg" alt="Photo from June 7, 2024">
+            </div>
+            <div class="gallery-item">
+                <img src="images_extra/20240607_125447.jpg" alt="Photo from June 7, 2024">
+            </div>
+            <div class="gallery-item">
+                <img src="images_extra/20240607_130249.jpg" alt="Photo from June 7, 2024">
+            </div>
+            <div class="gallery-item">
+                <img src="images_extra/20240607_131943.jpg" alt="Photo from June 7, 2024">
+            </div>
+            <div class="gallery-item">
+                <img src="images_extra/20240607_131958.jpg" alt="Photo from June 7, 2024">
+            </div>
+            <div class="gallery-item">
+                <img src="images_extra/20240610_113707.jpg" alt="Photo from June 10, 2024">
+            </div>
+            <div class="gallery-item">
+                <img src="images_extra/20240612_122846.jpg" alt="Photo from June 12, 2024">
+            </div>
+            <div class="gallery-item">
+                <img src="images_extra/20240617_192249.jpg" alt="Photo from June 17, 2024">
+            </div>
+            <div class="gallery-item">
+                <img src="images_extra/20240617_193100.jpg" alt="Photo from June 17, 2024">
+            </div>
+            <div class="gallery-item">
+                <img src="images_extra/20240622_144303.jpg" alt="Photo from June 22, 2024">
+            </div>
+            <div class="gallery-item">
+                <img src="images_extra/20240622_175350.jpg" alt="Photo from June 22, 2024">
+            </div>
+            <div class="gallery-item">
+                <img src="images_extra/20240622_191637.jpg" alt="Photo from June 22, 2024">
+            </div>
+            <div class="gallery-item">
+                <img src="images_extra/20240622_200451.jpg" alt="Photo from June 22, 2024">
+            </div>
+            <div class="gallery-item">
+                <img src="images_extra/20240623_121735.jpg" alt="Photo from June 23, 2024">
+            </div>
+            <div class="gallery-item">
+                <img src="images_extra/20240623_170100.jpg" alt="Photo from June 23, 2024">
+            </div>
+            <div class="gallery-item">
+                <img src="images_extra/20240624_122551.jpg" alt="Photo from June 24, 2024">
+            </div>
+            <div class="gallery-item">
+                <img src="images_extra/20240630_190354.jpg" alt="Photo from June 30, 2024">
+            </div>
+            <div class="gallery-item">
+                <img src="images_extra/20240705_162108.jpg" alt="Photo from July 5, 2024">
+            </div>
+            <div class="gallery-item">
+                <img src="images_extra/20240705_162410.jpg" alt="Photo from July 5, 2024">
+            </div>
+            <div class="gallery-item">
+                <img src="images_extra/20240705_162420.jpg" alt="Photo from July 5, 2024">
+            </div>
+            <div class="gallery-item">
+                <img src="images_extra/20240705_162641.jpg" alt="Photo from July 5, 2024">
+            </div>
+            <div class="gallery-item">
+                <img src="images_extra/20240705_171320.jpg" alt="Photo from July 5, 2024">
+            </div>
+            <div class="gallery-item">
+                <img src="images_extra/20240705_171324.jpg" alt="Photo from July 5, 2024">
+            </div>
+            <div class="gallery-item">
+                <img src="images_extra/20240706_083549.jpg" alt="Photo from July 6, 2024">
+            </div>
+        </div>
+    </main>
+    
+    <!-- Lightbox container -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightbox-img">
+        </div>
+    </div>
     
     <footer>
         <ul class="links">
@@ -81,5 +268,27 @@
             <li><a href="/blog.html">Blog</a></li>
         </ul>
     </footer>
+
+    <script>
+        // Lightbox functionality
+        const gallery = document.querySelectorAll('.gallery-item');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        
+        gallery.forEach(item => {
+            item.addEventListener('click', () => {
+                const img = item.querySelector('img');
+                lightboxImg.src = img.src;
+                lightboxImg.alt = img.alt;
+                lightbox.classList.add('active');
+            });
+        });
+        
+        lightbox.addEventListener('click', (e) => {
+            if (e.target !== lightboxImg) {
+                lightbox.classList.remove('active');
+            }
+        });
+    </script>
 </body>
 </html>
