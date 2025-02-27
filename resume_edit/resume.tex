@@ -1,0 +1,230 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-.70in}
+\addtolength{\evensidemargin}{-.70in}
+\addtolength{\textwidth}{1.3in}
+\addtolength{\topmargin}{-.75in}
+\addtolength{\textheight}{1.5in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{-0.0625in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-1pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-8pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{#1}
+    {\vspace{-2pt}}
+  }
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small#1} & \small#2 \\
+      \textit{\footnotesize#3} & \textit{\footnotesize #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\footnotesize#1} & \textit{\footnotesize #2} \\
+    \end{tabular*}\vspace{-12pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \footnotesize#1 & \footnotesize#2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\hspace{0.5em}\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]\vspace{-2pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Large \scshape Michael Huang} \\ \vspace{3pt}
+    \small 
+    \href{mailto:michael.yuki.huang@gmail.com}{{michael.yuki.huang@gmail.com}} $\cdot$
+    \href{https://gitmichaelhuang.github.io}{{gitmichaelhuang.github.io}} $\cdot$  
+    \href{https://linkedin.com/in/michaelhuang6}{{linkedin.com/in/michaelhuang6}} $\cdot$
+    \href{https://github.com/gitmichaelhuang}{{github.com/gitmichaelhuang}}
+\end{center} \vspace{-16pt}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubSubheading
+      {\small \normalfont \textbf{University of Illinois at Urbana-Champaign --} {Bachelor of Science, Statistics}} {\small \normalfont Aug 2020 -- May 2024} \\ \vspace{8pt}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+
+\section{Experience}
+  \resumeSubHeadingListStart
+
+      \resumeSubheading
+      {DuPage County, Election Division}{Sep 2024 -- Present}
+      {Elections Analyst}{Aurora, IL}
+      \resumeItemListStart
+        \resumeItem{Test}
+        \resumeItem{}
+        \resumeItem{}
+    \resumeItemListEnd
+
+    \resumeSubheading
+    {Blue Modern Advisory}{Jun 2023 -- Aug 2023}
+    {Software Engineer Intern}{Remote}
+    \resumeItemListStart
+      \resumeItem{Test}
+      \resumeItem{}
+      \resumeItem{}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Favors}{Jun 2022 -- Aug 2022}
+      {Software Engineer Intern}{Remote}
+      \resumeItemListStart
+        \resumeItem{Test}
+        \resumeItem{}
+        \resumeItem{}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Advanced Computer Communications Technologies}{Jun 2021 -- Aug 2021}
+      {Software Engineer Intern}{Remote}
+      \resumeItemListStart
+        \resumeItem{Test}
+        \resumeItem{}
+        \resumeItem{}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Number 1} $|$ \emph{}}{}
+          \resumeItemListStart
+            \resumeItem{Test}
+            \resumeItem{}
+            \resumeItem{}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Number 2} $|$ \emph{}}{}
+          \resumeItemListStart
+            \resumeItem{Test}
+            \resumeItem{}
+            \resumeItem{}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Number 3} $|$ \emph{}}{}
+          \resumeItemListStart
+            \resumeItem{Test}
+            \resumeItem{}
+            \resumeItem{}
+          \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{Number 4} $|$ \emph{}}{}
+          \resumeItemListStart
+            \resumeItem{Test}
+            \resumeItem{}
+            \resumeItem{}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------SKILLS-----------
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+   \footnotesize{\item{
+    \textbf{Languages}{:} \\
+    \textbf{Technologies}{:} \\
+    \textbf{Interests}{:}
+   }}
+\end{itemize}
+
+\end{document}
