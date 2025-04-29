@@ -43,8 +43,15 @@
 \addtolength{\oddsidemargin}{-.70in}
 \addtolength{\evensidemargin}{-.70in}
 \addtolength{\textwidth}{1.3in}
-\addtolength{\topmargin}{-.75in}
+\addtolength{\topmargin}{-.66in}
 \addtolength{\textheight}{1.5in}
+
+% % Adjust margins
+% \addtolength{\oddsidemargin}{-.70in}
+% \addtolength{\evensidemargin}{-.70in}
+% \addtolength{\textwidth}{1.3in}
+% \addtolength{\topmargin}{-.75in}
+% \addtolength{\textheight}{1.5in}
 
 \urlstyle{same}
 
@@ -63,31 +70,31 @@
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[1]{
-  \item\footnotesize{#1}
+  \item\small{#1}
     {\vspace{-2pt}}
   }
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \vspace{-2pt}
+      \vspace{0pt}
       \textbf{\small#1} & \small#2 \\
-      \vspace{-2pt}
-      \textit{\footnotesize#3} & \textit{\footnotesize #4} \\
+      \vspace{0pt}
+      \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-2pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\footnotesize#1} & \textit{\footnotesize #2} \\
+      \textit{\small#1} & \textit{\small #2} \\
     \end{tabular*}\vspace{-12pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \footnotesize#1 & \footnotesize#2 \\
+      \small#1 & \small#2 \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -114,9 +121,11 @@
 
 \begin{center}
     \textbf{\Large \scshape Michael Huang} \\ \vspace{3pt}
-    \small 
+    \small
+    {{(630) 549-9938}} $\cdot$
+    {{Aurora, IL}} $\cdot$ 
     \href{mailto:michael.yuki.huang@gmail.com}{{michael.yuki.huang@gmail.com}} $\cdot$
-    \href{https://gitmichaelhuang.github.io}{{gitmichaelhuang.github.io}} $\cdot$  
+    %\href{https://gitmichaelhuang.github.io}{{gitmichaelhuang.github.io}} $\cdot$  
     \href{https://linkedin.com/in/michaelhuang6}{{linkedin.com/in/michaelhuang6}} $\cdot$
     \href{https://github.com/gitmichaelhuang}{{github.com/gitmichaelhuang}}
 \end{center} \vspace{-16pt}
@@ -136,27 +145,45 @@
     {Blue Modern Advisory}{Jun 2023 -- Aug 2023}
     {Software Engineer Intern}{Remote}
     \resumeItemListStart
-      \resumeItem{Developed web scrapers using Python, BeautifulSoup, and Selenium to collect job postings in conjunction with the ETL process}
-      \resumeItem{Implemented a recommendation service using LLMs with LangChain, created components in React to accept user uploads}
-      \resumeItem{Developed automated unit tests with pytest and GitHub actions and implemented CI/CD pipelines}
+      \resumeItem{Engineered web scrapers using Python, BeautifulSoup, and Selenium to collect job postings in conjunction with ETL}
+      \resumeItem{Constructed a recommendation service using LLMs with LangChain, created components in React to accept user uploads}
+      \resumeItem{Established automated unit tests with pytest and GitHub actions and implemented CI/CD pipelines}
     \resumeItemListEnd
 
     \resumeSubheading
       {Favors}{Jun 2022 -- Aug 2022}
       {Software Engineer Intern}{Remote}
       \resumeItemListStart
-        \resumeItem{Developed and implemented React Native components for the Favors android app, actively changeing based on user feedback }
-        \resumeItem{Collaborated in an Agile development team to build RESTful API endpoints using Node.js and Express, handling user matching}
-        \resumeItem{Integrated Google Maps API for location services, allowing users to easily set and view favor locations within a specified radius}
+        \resumeItem{Architected React Native components for the Favors android app, iteratively refining based on user feedback}
+        \resumeItem{Orchestrated RESTful API endpoints using Node.js and Express, handling user matching}
+        \resumeItem{Integrated Google Maps API for location services, enabling users to set and view favor locations within a specified radius}
     \resumeItemListEnd
 
     \resumeSubheading
       {Advanced Computer and Communication Tech}{Jun 2021 -- Aug 2021}
       {Software Engineer Intern}{Remote}
       \resumeItemListStart
-        \resumeItem{Collaborated with engineers to design and implement a dashboard for visualizing network signal traffic, exposure to TCP/UDP}
-        \resumeItem{Utilized React, Tailwind CSS, and Node.js to build interactive dashboard components with responsive design principles}
-        \resumeItem{Used RESTful APIs to integrate the dashboard with existing monitoring systems, gained experience with git and Docker for CI/CD}
+        \resumeItem{Partnered with engineers to design and implement a dashboard for visualizing network TCP/UDP signal traffic}
+        \resumeItem{Crafted interactive dashboard components with React, Tailwind CSS, and Node.js following responsive design principles}
+        \resumeItem{Implemented RESTful APIs to integrate the dashboard with existing monitoring systems, utilizing git and Docker}
+    \resumeItemListEnd
+
+    \resumeSubheading
+    {DuPage County, Election Divison}{Oct 2024 - Apr 2025}
+    {Warehouse Laborer}{Aurora, IL}
+    \resumeItemListStart
+      \resumeItem{Conducted testing and maintenance on 600+ Verity HART election machines, assembled supplies for 250+ polling sites}
+      \resumeItem{Served as an on-call technical election judge providing IT support during the 2024 and 2025 elections}
+      \resumeItem{Facilitated the ballot collection process and executed various duties related to elections administration}
+    \resumeItemListEnd
+
+    \resumeSubheading
+    {IT@UIUC}{Sep 2022 - May 2024}
+    {Technical Member}{Champaign, IL}
+    \resumeItemListStart
+      \resumeItem{Built, tested, and troubleshot desktop computers, laptops, operating systems, and software in collaborative teams}
+      \resumeItem{Promoted computer security through education about internet habits and recognizing social engineering techniques}
+      \resumeItem{Configured online accounts and systems for local residents and students, creating knowledge-sharing platforms}
     \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -168,67 +195,67 @@
       \resumeProjectHeading
           {\textbf{Mobile App Social Media} \emph{}}{}
           \resumeItemListStart
-            \resumeItem{Currently building an original mobile app with the goal of encouraging casual conversation with strangers in public spaces}
-            \resumeItem{Architected and implemented a React Native based MVP mobile android application leveraging geolocation services to connect nearby users for spontaneous conversations}
+            \resumeItem{Prototyped an original mobile app fostering casual conversation with strangers in public spaces}
+            \resumeItem{Structured a React Native based MVP mobile android application leveraging geolocation services for interactions}
             %\resumeItem{MVP built using React Native, Node.js with Express, MongoDB, Socket.io, AWS, actively learning}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{Fullstack Video Web Application} \emph{}}{}
           \resumeItemListStart
-            \resumeItem{Created a website that lets users upload and watch videos, comment, like, displays thumbnails, tracks view counts, and search}
-            \resumeItem{Developed using Docker, React, Next.js, Google Cloud, and deployed using Firebase and Firestore}
+            \resumeItem{Built a platform enabling users to upload and watch videos, comment, like, view thumbnails, track views, and search}
+            \resumeItem{Deployed using Docker, React, Next.js, Google Cloud, Firebase and Firestore}
             %\resumeItem{}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{Multi-Layer Network Simulator} \emph{}}{}
           \resumeItemListStart
-            \resumeItem{Developed web-based OSI model simulator using React that visualizes data encapsulation/decapsulation across all network layers}
-            \resumeItem{Implemented real-time protocol header generation and visualization for multiple networking protocols (HTTP, TCP/IP, Ethernet)}
-            \resumeItem{Utilized modern front-end technologies including React hooks, CSS transitions, and SVG graphics to build a performant web app}
+            \resumeItem{Programmed web-based OSI model simulator using React that visualizes data encapsulation/decapsulation across all seven network layers}
+            \resumeItem{Generated real-time protocol header visualization for multiple networking protocols (HTTP, TCP/IP, Ethernet)}
+            \resumeItem{Optimized performance using React hooks, CSS transitions, and SVG graphics to create a responsive web application}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
 
 %-----------LEADERSHIP-----------
-\section{Leadership}
-  \resumeSubHeadingListStart
+% \section{Extracurriculars}
+%   \resumeSubHeadingListStart
 
-    \resumeSubheading
-    {Basketball Coach}{Jan 2025 - Present}
-    {Tutor}{Naperville, IL}
-    \resumeItemListStart
-      \resumeItem{Fostered a collaborative environment for young children to practice team work, fundamentals, conflict resolution, and participation}
-      \resumeItem{Engaged with players one on one for detailed training and support sessions to improve basketball dribbling, shooting, and techniques}
-      \resumeItem{Organized pickup games with a variety of ages to create an environment for students to practice learned skills in game-like situations}
-  \resumeItemListEnd
+%   %   \resumeSubheading
+%   %   {Basketball Coach}{Jan 2025 - Present}
+%   %   {Tutor}{Naperville, IL}
+%   %   \resumeItemListStart
+%   %     \resumeItem{Fostered a collaborative environment for young children to practice team work, fundamentals, conflict resolution, and participation}
+%   %     \resumeItem{Engaged with players one on one for detailed training and support sessions to improve basketball dribbling, shooting, and techniques}
+%   %     \resumeItem{Organized pickup games with a variety of ages to create an environment for students to practice learned skills in game-like situations}
+%   % \resumeItemListEnd
 
-    \resumeSubheading
-    {DuPage County, Election Divison}{Oct 2024 - Apr 2025}
-    {Warehouse Laborer}{Aurora, IL}
-    \resumeItemListStart
-      \resumeItem{Performed testing and maintence on 600+ Verity HART election machines and assembled critical supplies to over 250+ polling sites}
-      \resumeItem{Acted as an on-call technical election judge to support other judges during the 2024 and 2025 elections with IT expertise}
-      \resumeItem{Played a critical role in the ballot collection process; performed various duties related to elections administration}
-  \resumeItemListEnd
+%     \resumeSubheading
+%     {DuPage County, Election Divison}{Oct 2024 - Apr 2025}
+%     {Warehouse Laborer}{Aurora, IL}
+%     \resumeItemListStart
+%       \resumeItem{Conducted testing and maintenance on 600+ Verity HART election machines and assembled supplies for over 250+ polling sites}
+%       \resumeItem{Served as an on-call technical election judge providing IT support during the 2024 and 2025 elections}
+%       \resumeItem{Facilitated the ballot collection process and executed various duties related to elections administration}
+%   \resumeItemListEnd
 
-    \resumeSubheading
-    {IT@UIUC}{Sep 2022 - May 2024}
-    {Technical Member}{Champaign, IL}
-    \resumeItemListStart
-      \resumeItem{Worked closely in teams to build, test, troubleshoot desktop computers, laptops, operating systems, internet browsers, and software}
-      \resumeItem{Highlighted the importance of computer security through internet habits and recognizing social engineering and legitimacy}
-      \resumeItem{Help setup online accounts and practices for local residents and students, gave a platform to share thoughts and tutorials}
-  \resumeItemListEnd
+%     \resumeSubheading
+%     {IT@UIUC}{Sep 2022 - May 2024}
+%     {Technical Member}{Champaign, IL}
+%     \resumeItemListStart
+%       \resumeItem{Built, tested, and troubleshot desktop computers, laptops, operating systems, and software in collaborative teams}
+%       \resumeItem{Promoted computer security through education about internet habits and recognizing social engineering techniques}
+%       \resumeItem{Configured online accounts and systems for local residents and students, creating knowledge-sharing platforms}
+%   \resumeItemListEnd
 
-\resumeSubHeadingListEnd
+% \resumeSubHeadingListEnd
 
 %-----------SKILLS-----------
 \section{Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
-   \footnotesize{\item{
+   \small{\item{
     \textbf{Languages}{: C++, Python, Java, HTML/CSS, Typescript} \\
     \textbf{Technologies}{: React, React Native, Node.js, Express, MongoDB, AWS, GitHub, Tailwind CSS, Selenium, Beautiful Soup, CI/CD, RESTful APIs, git} \\
-    \textbf{Interests}{: Basketball, Running, Mathematics, Philosophy, History, Geography, Anthropology, Consumer Electronics}
+    \textbf{Interests}{: Basketball (Coach, Naperville), Running, Mathematics, Philosophy, History, Geography, Anthropology, Consumer Electronics}
    }}
 \end{itemize}
 
