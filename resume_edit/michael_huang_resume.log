@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.3.1)  2 MAR 2025 00:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.3.1)  28 APR 2025 19:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/michael/gitmichaelhuang.github.io/resume_edit/michael_huang_resume.tex
-(/home/michael/gitmichaelhuang.github.io/resume_edit/michael_huang_resume.tex
+**/home/michael/website/gitmichaelhuang.github.io/resume_edit/michael_huang_resume.tex
+(/home/michael/website/gitmichaelhuang.github.io/resume_edit/michael_huang_resume.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21> (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
@@ -301,7 +301,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 127.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 159.
+(Font)              <9> on input line 138.
 
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
@@ -315,21 +315,21 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `michael_huang_resume.out' has not changed.
-(rerunfilecheck)             Checksum: 7DA66CBF4DB6747ADCD9FDEC91CEC702;337.
+(rerunfilecheck)             Checksum: 72B3403305609CC0AF9993A018F639A2;430.
  ) 
 Here is how much of TeX's memory you used:
- 10268 strings out of 480171
- 162130 string characters out of 5894490
- 496516 words of memory out of 5000000
- 28093 multiletter control sequences out of 15000+600000
+ 10270 strings out of 480171
+ 162174 string characters out of 5894490
+ 502516 words of memory out of 5000000
+ 28094 multiletter control sequences out of 15000+600000
  476522 words of font info for 56 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 60i,11n,63p,490b,342s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,11n,63p,311b,342s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on michael_huang_resume.pdf (1 page, 124840 bytes).
+Output written on michael_huang_resume.pdf (1 page, 128147 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
- 57 compressed objects within 1 object stream
- 6 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 85 PDF objects out of 1000 (max. 8388607)
+ 63 compressed objects within 1 object stream
+ 7 named destinations out of 1000 (max. 500000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
